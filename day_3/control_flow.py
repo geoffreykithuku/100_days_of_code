@@ -7,7 +7,7 @@ if age >= 18:
 else:
     print("You are under age")
 
-#nested if
+#elif
 
 day = int(input("Enter a number between 1 and 7 "))
 
@@ -27,3 +27,16 @@ elif day == 7:
     print("Sunday")
 else:
     print("Invalid number")
+    
+    
+#nested if
+#using age from the first program
+
+if age >= 18:
+    ticket = (input("Do you have a ticket? "))
+    if ticket.lower() == 'yes':
+        print("You can enter")
+    else:
+        print("You need a ticket to enter")
+else:
+    print("You are too young to enter")
