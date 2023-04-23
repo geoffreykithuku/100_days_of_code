@@ -25,6 +25,12 @@ for operation in operations:
     
 op = input("Which of the above operation do you want to perform? ")
 
-for key in operations:
-    if key == op:
-        print(operations[key](n1, n2))
+calculate = operations[op]
+first_answer = calculate(n1,n2)
+print(f"{n1} {op} {n2} = ", first_answer)
+
+op = input("Which of the above operation do you want to perform? ")
+
+n3  = int(input("Enter the next number"))
+calculate = operations[op]
+print(f"{first_answer} {op} {n3} = ", calculate(first_answer,n3))
