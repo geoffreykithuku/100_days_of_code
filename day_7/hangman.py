@@ -20,7 +20,6 @@ end_of_game = False
 for _ in range(len(random_word)):
     blank += "_"
     
-print("The correct word is " + random_word)
 while not end_of_game:
     guess = input("Guess a letter ").lower()
 
